@@ -12,9 +12,9 @@ spec:
       labels:
         app: prometheus-server
     spec:
-      {{- if .Values.nodeSelector}}
-      nodeName: {{.Values.nodeSelector}}
-      {{- end}}
+      #{{- if .Values.nodeSelector}}
+      #nodeName: {{.Values.nodeSelector}}
+      #{{- end}}
       containers:
         - name: prometheus
           image: prom/prometheus:v2.12.0
